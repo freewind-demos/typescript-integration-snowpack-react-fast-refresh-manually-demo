@@ -1,10 +1,11 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const path = require('path');
+import { Configuration } from 'webpack';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import path from 'path';
 
-module.exports = {
+const config: Configuration = {
   mode: 'development',
   entry: './src/entry.tsx',
-  devtool: "inline-source-map",
+  devtool: 'inline-source-map',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
@@ -23,3 +24,5 @@ module.exports = {
     new HtmlWebpackPlugin()
   ]
 }
+
+export default config;
