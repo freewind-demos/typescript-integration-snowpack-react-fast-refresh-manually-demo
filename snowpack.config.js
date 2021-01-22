@@ -20,6 +20,8 @@ module.exports = {
   },
   devOptions: {
     /* ... */
+    port: 9110,
+    hmrPort: 9111
   },
   buildOptions: {
     /* ... */
