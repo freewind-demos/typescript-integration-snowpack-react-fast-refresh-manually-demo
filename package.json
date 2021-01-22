@@ -1,8 +1,6 @@
 {
   "scripts": {
-    "start": "snowpack dev",
-    "build": "snowpack build",
-    "test": "echo \"This template does not include a test runner by default.\" && exit 1"
+    "demo": "snowpack dev"
   },
   "devDependencies": {
     "@snowpack/plugin-react-refresh": "2.4.0",
